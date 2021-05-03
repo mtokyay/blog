@@ -3,8 +3,6 @@ import { useHydrate } from 'next-mdx/client'
 import { mdxComponents } from '../../components/mdx-components'
 
 export default function PostPage({ post }) {
-  console.log(post)
-
   const content = useHydrate(post, {
     components: mdxComponents
   })
